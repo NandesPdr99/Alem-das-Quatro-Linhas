@@ -557,6 +557,15 @@ hr {
     border-color: #252525;
 }
 
+.card.fogo p.first-of-type {
+    color: #CBD5E1;
+}
+
+.card.fogo p {
+    color: #FACC15;
+}
+
+
 .card.fogo h3 { 
     color: #FFFFFF;
 }
