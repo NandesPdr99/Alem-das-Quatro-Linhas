@@ -600,5 +600,12 @@ hr {
     max-width: none;
 }
 
+/*LENDAS STYLE*/
 
+.img-lenda {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
 
