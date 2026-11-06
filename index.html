@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
     <title>Alem das 4 linhas</title>
     
 </head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <body>
     <header>
         <h1> Além das Quatro Linhas</h1>
@@ -41,39 +43,40 @@
             </div>
         </section>
        
-       <section class="apresentacao">
-            <p class="apresentacao-subtitulo" > A PAIXÃO QUE ATRAVESSA GERAÇÕES</p>
+       <section class="apresentacao py-5">
+            <div class="container">
+                <p class="apresentacao-subtitulo" > A PAIXÃO QUE ATRAVESSA GERAÇÕES</p>
 
-            <h2> Muito além de 90 minutos. </h2>
+                <h2> Muito além de 90 minutos. </h2>
 
-            <p>
-                O futebol brasileiro é feito de histórias que ultrapassam as quatro linhas. De gerações 
-                inesquecíveis a conquistas que marcaram o mundo, cada craque deixou sua marca na nossa identidade.
-            </p>
+                <p>
+                    O futebol brasileiro é feito de histórias que ultrapassam as quatro linhas. De gerações 
+                    inesquecíveis a conquistas que marcaram o mundo, cada craque deixou sua marca na nossa identidade.
+                </p>
 
         
-            <p> 
-                Aqui, você vai reviver os momentos que transformaram o Brasil no país do 
-                futebol e conhecer os clubes que ajudaram a construir esse legado.
-            </p>
+                <p> 
+                    Aqui, você vai reviver os momentos que transformaram o Brasil no país do 
+                    futebol e conhecer os clubes que ajudaram a construir esse legado.
+                </p>
 
-            <div class="indicadores">
-                <div class="indicador">
+                <div class="d-flex flex-wrap gap-4 mt-5">
+                    <div class="bg-white p-4 border rounded-4">
                     
-                    <h3>5</h3>
-                    <p>Títulos mundiais</p>
+                        <h3 class="fw-bold mb-0" style="color: #166534; font-size: 40px;">5</h3>
+                        <p class="small mb-0">Títulos mundiais</p>
                 
-                </div>
+                    </div>
 
-                <div class="indicador">
+                    <div class="bg-white p-4 border rounded-4">
                     
-                    <h3>1914</h3>
-                    <p>Início da Seleção</p>
+                        <h3 class="fw-bold mb-0" style="color: #166534; font-size: 40px;">1914</h3>
+                        <p class="small mb-0">Início da Seleção</p>
                 
-                </div>
+                    </div>
 
+                </div>
             </div>
-
         </section>
 
         <section class="jornada">
@@ -82,40 +85,48 @@
 
             <h2> Escolha sua jornada.</h2>
         
-            <div class="jornada-cards">
-    
-                <a href="historia.html" class="card">
-                    <img src="img/selecao.jpg" alt="Botafogo-card">
+            <div  class="row g-4">
                 
-                    <h3>Nossa História</h3>
-                    <p>As origens da Amarelinha.</p>
-                   
-                </a>
+                <div class="col-md-6">
                     
-                <a href="lendas.html" class="card">
-                    <img src="img/lendas.jpg" alt="Lendas-img" >
-                        
-                    <h3>Lendas</h3>
-                    <p>Os craques que fizeram história.</p>
-                    
-                </a>
+                    <a href="historia.html" class="card h-100 text-decoration-none overflow-hidden rounded-4">
+                        <img src="img/selecao.jpg" alt="card-nossahistoria">
+                
+                        <div class="card-body">
+                            <h3 class="card-title">Nossa História</h3>
+                            <p class="card-text mb-0">As origens da Amarelinha.</p>
+                        </div>   
+                    </a>
+                </div>   
 
-                <a href="botafogo.html" class="card card-botafogo">
-                    <img src="img/Botafogo campeão.jpg" alt="Botafogo-card" class="card-bot">
-                        
-                    <h3>O Glorioso ⭐</h3>
-                    <p>O clube que marcou gerações.</p>
-                    
-                </a>
-                    
-                <a href="copas.html" class="card">
-                    <img src="img/Trofeu.jpg" alt="trofeu-card" class="card-trof" >
-                        
-                    <h3>Cinco Estrelas🏆🏆🏆🏆🏆</h3>
-                    <p>As conquistas do Brasil.</p>
-                    
-                </a>
+                <div class="col-md-6">
+                    <a href="lendas.html" class="card h-100 text-decoration-none overflow-hidden rounded-4">
+                        <img src="img/lendas.jpg" alt="Lendas-img" >
+                        <div class="card-body">
+                            <h3 class="card-title">Lendas</h3>
+                            <p class="card-text mb-0">Os craques que fizeram história.</p>
+                        </div>
+                    </a>
+                </div>
                 
+                <div class="col-md-6">
+                    <a href="botafogo.html" class="card card-botafogo">
+                        <img src="img/Botafogo campeão.jpg" alt="Botafogo-card" class="card-bot">
+                        <div class="card-body">
+                            <h3 class="card-title">O Glorioso ⭐</h3>
+                            <p class="card-text mb-0">O clube que marcou gerações.</p>
+                        </div>
+                    </a>
+                </div>   
+                <div class="col-md-6">
+                    <a href="copas.html" class="card h-100 text-decoration-none overflow-hidden rounded-4">
+                        <img src="img/Trofeu.jpg" alt="trofeu-card" class="card-trof" >
+                        <div class="card-body">
+                            <h3 class="card-title">Cinco Estrelas🏆🏆🏆🏆🏆</h3>
+                            <p class="card-text mb-0">As conquistas do Brasil.</p>
+                        </div>
+                    </a>
+                </div>    
             </div>
         </section>
 
@@ -136,9 +147,9 @@
     
     <footer class="rodape">
 
-        <div class="rodape-conteudo">
+        <div class="row justify-content-between g-4">
 
-            <div class="rodape-sobre">
+            <div class="col-12 col-md-auto d-flex flex-column gap-3 rodape-links">
                 <h2>Além das 4 Linhas.</h2>
                 <p>
                     Mais que futebol. Histórias, lendas e
@@ -146,7 +157,7 @@
                 </p>
             </div>
 
-            <div class="rodape-links">
+            <div class="col-12 col-md-auto d-flex flex-column gap-3 rodape-links">
                 <h3>Explore</h3>
 
                 <a href="index.html">Início</a>

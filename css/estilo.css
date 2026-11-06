@@ -106,7 +106,6 @@ nav a:hover {
 }
 .apresentacao {
     background-color: #F8FAFC;
-    padding: 80px 10%;
 }
 
 .apresentacao h2 { 
@@ -117,7 +116,7 @@ nav a:hover {
 
 .apresentacao p { 
     font-size: 18px;
-    columns: #475569;
+    color: #475569;
     line-height: 1.8;
     max-width: 850px;
 }
@@ -127,19 +126,6 @@ nav a:hover {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 2px;
-}
-
-.indicadores { 
-    display: flex;
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.indicador {
-    background-color: #FFFFFF;
-    padding: 20px 30px;
-    border: 1px solid #E2E8F0;
-    border-radius: 20px;
 }
 
 .indicador h3 { 
@@ -176,13 +162,6 @@ nav a:hover {
     margin: 15px 0 25px;
 }
 
-.jornada-cards { 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-}
-
-
 .card img {
     width: 100%;
     height: 400px;
@@ -201,31 +180,13 @@ nav a:hover {
 }
 
 .card {
-    display: block;
-    background-color: #FFFFFF;
-    border: 1px solid #E2E8F0;
-    border-radius: 17px;
-    overflow: hidden;
-    text-decoration: none;
     color: #101820;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .card:hover {
     transform: scale(1.03);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-}
-
-
-.card h3 {
-    padding-left: 15px;
-
-}
-
-.card p { 
-    padding-left: 15px;
-    color: #475569;
 }
 
 .card-botafogo { 
@@ -291,19 +252,6 @@ nav a:hover {
     background-color: #101820;
     color: #FFFFFF;
     padding: 60px 8%;
-}
-
-.rodape-conteudo {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.rodape-links {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
 }
 
 .rodape-sobre h2 {
