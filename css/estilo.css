@@ -609,3 +609,48 @@ hr {
     object-position: center;
 }
 
+
+/* TÍTULO DAS LENDAS */
+.titulo-lendas {
+    font-size: 45px;
+    color: #FACC15;
+    font-weight: bold;
+}
+
+
+/* CARDS */
+.card-lenda {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+/* IMAGENS */
+.card-lenda img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* NOME DOS JOGADORES */
+.card-lenda h3 {
+    color: #1B4332;
+    font-weight: bold;
+}
+
+/* DESCRIÇÃO */
+.card-lenda p {
+    color: #555;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.card-lenda:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/*Subir imagem do ronaldo*/
+.card-lenda .img-ronaldo {
+    object-fit: cover !important;
+    object-position: center 50% !important;
+}
