@@ -1,0 +1,23 @@
+
+main {
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+main img {
+    width: 100%;
+    object-fit: cover;
+}
+
+main p {
+    line-height: 1.8;
+}
+
+main .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+}
