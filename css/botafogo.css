@@ -1,0 +1,19 @@
+.secao-botafogo.historia-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center 50%;
+    border-radius: 12px;
+}
+
+.secao-botafogo{
+    gap: 20px;
+}
+
+.secao-botafogo .dado {
+    flex: 1;
+    background-color: #1B2732;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
