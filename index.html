@@ -151,12 +151,14 @@
                         <div class="col-md-6">
                             <label for="contato-nome" class="form-label">Nome</label>
                             <input type="text" id="contato-nome" name="nome" class="form-control"
-                                   autocomplete="name" required>
+                                   autocomplete="name" minlength="2" pattern=".*\S.*"
+                                   title="Digite pelo menos 2 caracteres, incluindo um que não seja espaço."
+                                   placeholder="Seu nome" required>
                         </div>
                         <div class="col-md-6">
                             <label for="contato-email" class="form-label">E-mail</label>
                             <input type="email" id="contato-email" name="email" class="form-control"
-                                   autocomplete="email" required>
+                                   autocomplete="email" placeholder="voce@exemplo.com" required>
                         </div>
                         <div class="col-12">
                             <label for="contato-assunto" class="form-label">Assunto</label>
@@ -170,7 +172,7 @@
                         <div class="col-12">
                             <label for="contato-mensagem" class="form-label">Mensagem</label>
                             <textarea id="contato-mensagem" name="mensagem" class="form-control"
-                                      rows="5" required></textarea>
+                                      rows="5" minlength="10" placeholder="Escreva pelo menos 10 caracteres" required></textarea>
                         </div>
                         <div class="col-12">
                             <input type="submit" class="btn btn-warning fw-semibold" value="Testar envio">
