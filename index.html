@@ -21,6 +21,7 @@
             <a href="copas.html">Copas</a>
             <a href="futuro.html">Futuro</a>
             <a href="camisas.html">Camisas</a>
+            <a href="#contato">Contato</a>
             <a href="https://www.cbf.com.br/">CBF</a>
         </nav>
     </header>
@@ -137,6 +138,48 @@
             <img src="img/Barro, World Cup.jpg" alt="quiz" class="desafio-img">
             
         </section>
+
+        <section id="contato" class="container pb-5" aria-labelledby="titulo-contato">
+            <div class="mx-auto rounded-4 border bg-light p-4 p-md-5 col-lg-8">
+                <h2 id="titulo-contato" class="mb-3">Contato</h2>
+                <p id="contato-ajuda" class="text-body-secondary">
+                    Formulário de demonstração. Você pode testar o preenchimento e a validação.
+                </p>
+
+                <form id="form-contato" method="post" aria-describedby="contato-ajuda">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="contato-nome" class="form-label">Nome</label>
+                            <input type="text" id="contato-nome" name="nome" class="form-control"
+                                   autocomplete="name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="contato-email" class="form-label">E-mail</label>
+                            <input type="email" id="contato-email" name="email" class="form-control"
+                                   autocomplete="email" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="contato-assunto" class="form-label">Assunto</label>
+                            <select id="contato-assunto" name="assunto" class="form-select" required>
+                                <option value="">Escolha um assunto</option>
+                                <option value="sugestao">Sugestão</option>
+                                <option value="correcao">Correção de conteúdo</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="contato-mensagem" class="form-label">Mensagem</label>
+                            <textarea id="contato-mensagem" name="mensagem" class="form-control"
+                                      rows="5" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <input type="submit" class="btn btn-warning fw-semibold" value="Testar envio">
+                        </div>
+                    </div>
+                    <p id="contato-status" class="mt-3 mb-0 text-success" role="status"></p>
+                </form>
+            </div>
+        </section>
     </main>
     
     <footer class="rodape">
@@ -174,5 +217,12 @@
 
     </footer>
 
+    <script>
+        document.getElementById("form-contato").addEventListener("submit", function (event) {
+            event.preventDefault();
+            document.getElementById("contato-status").textContent =
+                "Campos validados. Esta demonstração não envia mensagens.";
+        });
+    </script>
 </body>
 </html>
