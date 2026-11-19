@@ -32,7 +32,20 @@ const camisas = [
     },
 ];
 
-let camisaAtual = 0;
+const chaveUltimaCamisa = "alemDasQuatroLinhas.ultimaCamisa";
+
+function recuperarCamisaAtual() {
+    try {
+        const imagemSalva = localStorage.getItem(chaveUltimaCamisa);
+        const indice = camisas.findIndex((camisa) => camisa.imagem === imagemSalva);
+        return indice === -1 ? 0 : indice;
+    } catch {
+        // A galeria continua disponível quando o navegador bloqueia o armazenamento.
+        return 0;
+    }
+}
+
+let camisaAtual = recuperarCamisaAtual();
 
 const imagem = document.getElementById("imagemCamisa");
 const ano = document.getElementById("anoCamisa");
@@ -49,6 +62,12 @@ function mostrarCamisa() {
     titulo.textContent = camisa.titulo;
     descricao.textContent = camisa.descricao;
     contador.textContent = (camisaAtual + 1) + " de " + camisas.length;
+
+    try {
+        localStorage.setItem(chaveUltimaCamisa, camisa.imagem);
+    } catch {
+        // A navegação continua disponível se a seleção não puder ser salva.
+    }
 }
 
 document.getElementById("btnProxima").addEventListener("click", function () {
